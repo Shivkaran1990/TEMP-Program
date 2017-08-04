@@ -15,11 +15,35 @@ public class LinkListProgram {
     System.out.println("after deletion from last");
     cs.deleteElement(3);
     cs.display();
+    if(cs.isCyclic())
+    {
+    	 System.out.println("cycle");
+    }else
+    {
+    	 System.out.println("not cycle");
+    }
 	}
 }
 class CustomLinkList
 {
 	Node root;
+	
+	
+	public boolean isCyclic()
+	{
+	Node fast=root;
+	Node slow=root;
+	while(fast!=null&&fast.next!=null)
+	{
+		fast=fast.next.next;
+		slow=slow.next;
+		if(fast==slow)
+		{
+			return true;
+		}
+	}
+	return false;
+	}
 	
 	public void deleteElement(int i)
 	{

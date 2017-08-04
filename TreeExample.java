@@ -10,6 +10,8 @@ public class TreeExample {
 		t.addNode(7);
 		t.addNode(20);
 		t.addNode(15);
+		//t.countNode();
+		t.inOrder();
 	}
 
 }
@@ -21,7 +23,6 @@ class Tree
 	{
 		root=addNode(root,value);
 	}
-	
 	public TreeNode addNode(TreeNode node,int value)
 	{
 		TreeNode tempNode=new TreeNode(value);
@@ -44,6 +45,42 @@ class Tree
 	
 	public void display()
 	{
+		
+	}
+	public void countNode()
+	{
+		int count=countNode(root);
+		System.out.println(count);
+	}
+	
+	public void inOrder()
+	{
+		inOrder(root);
+	}
+	
+	private void inOrder(TreeNode node)
+	{
+		if(node!=null)
+		{
+			inOrder(node.left);
+			System.out.println(node.value);
+			inOrder(node.right);
+		}
+	}
+	
+	private int countNode(TreeNode node)
+	{
+	
+		if(node==null)
+		{
+			return 0;
+		}else
+		{
+			int count=1;
+			count+=countNode(node.left);
+			count+=countNode(node.right);
+			return count;
+		}
 		
 	}
 	
