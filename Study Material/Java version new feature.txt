@@ -1,0 +1,39 @@
+Java Vesion with New features.
+
+Java 5.
+
+for each loop was added.
+vargrgs was added.
+static import was added
+Autoboxing and Unboxing(coverient variable)
+Enum
+Annotaion
+generics
+
+Java 6 
+JSR :Java Specification Requests 
+Comman annotation was added
+Scripting was added in java platfrom
+JDBC 4.0 jsr221
+Enhancements in java.lang.Class and java.lang.reflect
+ecurity Enhancements
+
+Java 1.7
+String in Switch case.
+one catch can hanlde multiple expection
+once sided generic.
+try with resuorece
+
+java 8
+Lambda expression
+functional interface.
+JDBC Improvements
+Concurrency Improvement
+collection improvment.
+Default Methods in inteface.
+Date/Time API
+ 
+
+
+
+
